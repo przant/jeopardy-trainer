@@ -6,7 +6,7 @@ Interview prep tool for Go, Kubernetes, and Linux. Uses smart question rotation 
 
 - **Three domains:** Gopardy (Go), Kuberpardy (K8s), Jeolinux (Linux)
 - **Smart rotation:** Questions shown 2-3 times max before cycling
-- **Mixed question types:** Multiple choice, fill-in-the-blank, scenarios
+- **Mixed question types:** Multiple choice, fill-in-the-blank
 - **Exam mode:** Answer all 10, then see results with explanations
 - **Minimal UI:** Color-coded domains, clean design for focus
 - **Session tracking:** SQLite tracks exposure, prioritizes unseen questions
