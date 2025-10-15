@@ -205,7 +205,7 @@ D) user.FromJSON(r.Body)
 
 ---
 
-## Q015 [gotcha] [scenario]
+## Q015 [gotcha] [multiple-choice]
 **Question:** This goroutine leaks. Why?
 
 ```go
@@ -352,7 +352,7 @@ D) Nothing wrong
 
 ---
 
-## Q023 [gotcha] [scenario]
+## Q023 [gotcha] [multiple-choice]
 **Question:** This query is vulnerable. To what?
 
 ```go
