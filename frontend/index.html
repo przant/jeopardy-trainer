@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Trainer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <div class="container">
+            <h1>🎯 Knowledge Trainer</h1>
+            <p class="subtitle">Exercise your memory muscle</p>
+            
+            <div class="domain-grid">
+                <div class="domain-card go" data-domain="go">
+                    <div class="domain-icon">🔵</div>
+                    <h2>Gopardy</h2>
+                    <p>Go patterns, HTTP, concurrency, databases</p>
+                    <div class="stats" id="stats-go">Loading...</div>
+                </div>
+                
+                <div class="domain-card k8s" data-domain="k8s">
+                    <div class="domain-icon">⚓</div>
+                    <h2>Kuberpardy</h2>
+                    <p>Pods, Services, debugging, deployment</p>
+                    <div class="stats" id="stats-k8s">Loading...</div>
+                </div>
+                
+                <div class="domain-card linux" data-domain="linux">
+                    <div class="domain-icon">🐧</div>
+                    <h2>Jeolinux</h2>
+                    <p>Commands, permissions, processes, troubleshooting</p>
+                    <div class="stats" id="stats-linux">Loading...</div>
+                </div>
+            </div>
+            
+            <div class="session-config">
+                <p>Questions per session: <strong>10</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div id="game-page" class="page">
+        <div class="container">
+            <div class="game-header">
+                <h2 id="game-title">Gopardy</h2>
+                <div class="progress">
+                    <span id="question-counter">1/10</span>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-meta">
+                    <span class="difficulty-badge" id="difficulty-badge">basic</span>
+                    <span class="type-badge" id="type-badge">multiple-choice</span>
+                </div>
+                
+                <div class="question-text" id="question-text">
+                    Loading question...
+                </div>
+                
+                <div class="answer-area">
+                    <!-- Multiple choice options -->
+                    <div id="mc-options" class="mc-options hidden">
+                        <!-- Generated dynamically -->
+                    </div>
+                    
+                    <!-- Fill in the blank input -->
+                    <div id="fill-blank" class="fill-blank hidden">
+                        <input type="text" id="fill-answer" placeholder="Your answer..." />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
+                <button id="next-btn" class="btn btn-primary">Next</button>
+                <button id="submit-btn" class="btn btn-success hidden">Submit All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="results-page" class="page">
+        <div class="container">
+            <div class="results-header">
+                <h2 id="results-title">Results</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="score-text">7/10</span>
+                        <span id="score-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-list" id="results-list">
+                <!-- Generated dynamically -->
+            </div>
+            
+            <div class="results-actions">
+                <button id="retry-btn" class="btn btn-primary">Try Again</button>
+                <button id="home-btn" class="btn btn-secondary">Change Domain</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
