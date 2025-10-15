@@ -158,7 +158,7 @@ ______ user:group /path/file
 
 ---
 
-## Q013 [gotcha] [scenario]
+## Q013 [gotcha] [multiple-choice]
 **Question:** You run `chmod 777 ~/.ssh/id_rsa`. SSH refuses to use key. Why?
 
 **Options:**
@@ -306,7 +306,7 @@ D) stderr=stdout
 
 ---
 
-## Q024 [gotcha] [scenario]
+## Q024 [gotcha] [multiple-choice]
 **Question:** You run `nohup python app.py &`. After logout, process dies. Why?
 
 **Options:**
