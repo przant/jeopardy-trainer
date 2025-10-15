@@ -116,7 +116,7 @@ function displayQuestion(index) {
     document.getElementById('type-badge').textContent = question.type;
     
     // Update question text
-    document.getElementById('question-text').textContent = question.question;
+    document.getElementById('question-text').innerHTML = marked.parse(question.question);
     
     // Clear and setup answer area
     const mcOptions = document.getElementById('mc-options');
@@ -261,7 +261,7 @@ function displayResults(data) {
         
         const questionText = document.createElement('div');
         questionText.className = 'result-question';
-        questionText.textContent = result.question;
+        questionText.innerHTML = marked.parse(result.question);
         
         const answers = document.createElement('div');
         answers.className = 'result-answers';
