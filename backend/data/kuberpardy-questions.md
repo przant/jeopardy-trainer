@@ -146,7 +146,7 @@ D) Image pull failure
 
 ---
 
-## Q012 [gotcha] [scenario]
+## Q012 [gotcha] [multiple-choice]
 **Question:** You scale Deployment to 3 replicas. Ingress only routes to one pod. Why?
 
 **Options:**
@@ -214,7 +214,7 @@ D) Required for StatefulSets
 
 ---
 
-## Q017 [gotcha] [scenario]
+## Q017 [gotcha] [multiple-choice]
 **Question:** Deployment updated but pods still running old version. Why?
 
 **Options:**
@@ -348,7 +348,7 @@ D) Schedule pod on node
 
 ---
 
-## Q027 [gotcha] [scenario]
+## Q027 [gotcha] [multiple-choice]
 **Question:** All pods healthy but Ingress hostname doesn't resolve. Issue?
 
 **Options:**
